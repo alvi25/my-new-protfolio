@@ -232,6 +232,42 @@ section.work .card-wrapper{
     grid-gap: 2rem;
 }
 
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: #acf8e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f7aa6c;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+section.work .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.work .card-wrapper .card .overlay a{
+    color: black;
+    font-family:'Raleway', sans-serif; ;
+    text-decoration: none;
+}
+section.work .card-wrapper .card img{
+    height: 100;
+    width: 100;
+}
+
 
 footer{
     background: var(--dark);
